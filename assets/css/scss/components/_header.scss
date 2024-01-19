@@ -1,0 +1,25 @@
+.b-header {
+  display: flex;
+  justify-content: space-between;
+  gap: .5rem;
+  flex-wrap: wrap;
+  align-items: center;
+  font-size: clamp(1rem, 4rem, 3vw);
+  background: rgba(255,247,190,.5);
+  background-image: repeating-linear-gradient( 45deg, rgba(50, 205, 50, .25) 0px, rgba(50, 205, 50, .25) 1px, rgba(255,255,255,0) 1px, rgba(255,255,255,0) 8px );
+  background-repeat: no-repeat;
+  width: calc(100% - 10vw);
+  position: fixed;
+  top: 15vw;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  padding: 4px;
+  // height: calc(6vw - 8px);
+
+  @media(min-width: 500px) {
+    height: calc(6vw - 8px);
+    top: 5vw;
+    transform: translate(-50%);
+  }
+}
